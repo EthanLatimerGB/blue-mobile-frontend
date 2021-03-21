@@ -1,0 +1,106 @@
+body {
+	padding-top: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	padding-top: 90px;
+	font-size: 3em;
+}
+
+.mainWindow {
+	padding: 0 15%;
+}
+
+.navbarWindow {
+	padding: 0 15%;
+}
+
+.navbarWindow img {
+	padding-right: 3em;
+}
+
+/* Homepage SplashScreen */
+
+.homepageSplash {
+	position: relative;
+	height: 500px;
+	background: linear-gradient(94.32deg, #0F29B6 3.68%, rgba(255, 255, 255, 0) 92.47%), #0197F8;
+	padding: 0 15%;
+}
+
+.homepageSplash img {
+	height: 80%;
+	position: absolute;
+	bottom: 0px;
+	right: 15%;
+	z-index: 0;
+}
+
+.homepageSplashText {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+.homepageSplashText h1 {
+	z-index: 1;
+}
+
+.circularShaddow {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.icon {
+	margin: 1em 0;
+}
+
+.custom-shape-divider-bottom-1615577569 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.custom-shape-divider-bottom-1615577569 svg {
+	position: relative;
+	display: block;
+	width: calc(123% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-bottom-1615577569 .shape-fill {
+	fill: #ffffff;
+}
+
+/* Homepage */
+
+
+
+/** For mobile devices **/
+@media (max-width: 768px) {
+	.custom-shape-divider-bottom-1615577569 svg {
+		width: calc(129% + 1.3px);
+		height: 50px;
+	}
+
+	.homepageSplash {
+		height: 300px;
+	}
+
+	.homepageSplash img {
+		display: none;
+	}
+}
