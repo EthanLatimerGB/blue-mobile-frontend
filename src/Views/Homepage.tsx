@@ -38,7 +38,7 @@ const Homepage: React.FC = () => {
 							imageSrc={ClockWiseArrow}
 						/>
 					</CardDeck>
-					<h2>What do we sell</h2>
+					<h2>See our whole selection</h2>
 					<CardDeck>
 						<InfoCard title="Mobiles" imageSrc={Phone} />
 						<InfoCard title="Tablets" imageSrc={Tablet} />
