@@ -6,12 +6,16 @@ import { Switch, Route } from "react-router-dom";
 
 import Homepage from "./Views/Homepage";
 import TestView from "./Views/testVIew";
+import Browse from "./Views/Browse";
 
 const App: React.FC = () => {
 	return (
 		<div>
 			<NavBar />
 			<Switch>
+				<Route path="/browse">
+					<Browse />
+				</Route>
 				<Route path="/test">
 					<TestView />
 				</Route>

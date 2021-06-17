@@ -174,11 +174,121 @@ h2 {
 }
 
 .highlightGold {
-	box-shadow: 0px 0px 10px 1px #C0AD00;
+	box-shadow: 0px 0px 10px 1px #c0ad00;
 }
 
 .highlightGold:hover {
-	box-shadow: 0px 0px 15px 5px #C0AD00;
+	box-shadow: 0px 0px 15px 5px #c0ad00;
+}
+
+/* TitleWave */
+.titleWave {
+	position: relative;
+	height: 40vh;
+	background: linear-gradient(
+			94.32deg,
+			#0f29b6 3.68%,
+			rgba(255, 255, 255, 0) 92.47%
+		),
+		#0197f8;
+	padding: 0 15%;
+}
+
+.titleWaveContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.titleWaveText {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 3em;
+}
+
+.titleWaveSearchBar {
+	align-self: stretch;
+	margin: 0 10%;	
+}
+
+.titleWaveSVGContainer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	z-index: 1;	align-self: stretch;
+
+}
+
+.titleWaveSVGContainer svg {
+	position: relative;
+	display: block;
+	width: calc(123% + 1.3px);
+	height: 50px;
+}
+
+.titleWaveSVGContainer .shape-fill {
+	fill: white;
+}
+
+/* SearchBar */
+.searchBar {
+	height: 3em;
+	box-shadow: 0px 0px 5px #0f0f0f;
+	border-radius: 0.35em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: white;
+}
+
+.searchBarLogoContainer {
+	flex-grow: 0;
+	height: 100%;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchBarLogo {
+	height: 1.25em;
+	width: auto;
+}
+
+.searchBar form {
+	flex-grow: 1;
+	width: 1em;
+}
+
+.searchBarInput {
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	overflow: hidden;
+	padding: 0.25em 0;
+}
+
+.searchBarInput input {
+	width: 100%;
+	border-style: none;
+	opacity: 50%;
+	padding-top: 4px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.searchBarInput input:focus {
+	outline: none;
 }
 
 /** For mobile devices **/
